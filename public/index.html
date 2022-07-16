@@ -45,5 +45,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div style="margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;text-align: center;"><span>This page has been viewed</span> <span id="count">0</span> <span>times.</span></div> <script> const countEl = document.getElementById("count"); countvisits(); function countvisits() { fetch('https://api.countapi.xyz/update/iridescent-syrniki-54f5ae.netlify.app/mouse/?amount=1') .then((res) => res.json()) .then((res) => { countEl.innerHTML = res.value; }); } </script>
   </body>
 </html>
